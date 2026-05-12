@@ -1,0 +1,9 @@
+[31merror when starting dev server:
+Error: Port 3000 is already in use
+    at httpServerStart (file:///C:/Users/itsup/Personal/APIClient/vite-project/no[2m4:07:56 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/App.jsx (resolved id: C:/Users/itsup/Personal/APIClient/vite-project/src/App.jsx) in C:/Users/itsup/Personal/APIClient/vite-project/src/main.jsx. Does the file exist?
+[2m4:11:16 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/App.css. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m4:11:16 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/index.css. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m4:11:16 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m4:11:37 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/index.css (resolved id: C:/Users/itsup/Personal/APIClient/vite-project/src/index.css) in C:/Users/itsup/Personal/APIClient/vite-project/src/main.jsx. Does the file exist?
+[2m4:11:37 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to load url /src/App.jsx (resolved id: C:/Users/itsup/Personal/APIClient/vite-project/src/App.jsx) in C:/Users/itsup/Personal/APIClient/vite-project/src/main.jsx. Does the file exist?
+[33mPort 3000 is in use on a wildcard address, but 127.0.0.1:3000 is available. There may be another server running on a wildcard IP on port 3000.[39m

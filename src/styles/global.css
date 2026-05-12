@@ -1,0 +1,207 @@
+:root {
+  --page-bg: #eef3f5;
+  --sidebar-bg: #f7f9fb;
+  --surface: #ffffff;
+  --surface-soft: #fbfcfe;
+  --surface-muted: #f5f6f8;
+  --line: #dfe5eb;
+  --line-strong: #cbd5df;
+  --text: #344054;
+  --text-soft: #667085;
+  --text-strong: #101828;
+  --accent: #147972;
+  --accent-strong: #0f6b65;
+  --app-gradient-start: rgba(255, 255, 255, 0.88);
+  --app-gradient-end: rgba(255, 255, 255, 0.7);
+  --button-secondary-bg: #ffffff;
+  --code-bg: #f7f9fb;
+  --code-text: #27364a;
+  --danger-bg: #fff0f3;
+  --danger-text: #9f1239;
+  --focus-ring: rgba(66, 88, 199, 0.24);
+  --input-bg: #ffffff;
+  --input-placeholder: #98a2b3;
+  --parse-error-bg: #fff1f1;
+  --parse-error-border: #f1a5a5;
+  --parse-error-text: #8a1f1f;
+  --pre-bg: #121722;
+  --pre-text: #d8e6ff;
+  --selected-bg: #f5f7ff;
+  --selected-border: rgba(66, 88, 199, 0.35);
+  --shadow-soft: 0 10px 32px rgba(31, 41, 55, 0.05);
+  --shadow-fallback: 0 16px 40px rgba(31, 41, 55, 0.08);
+  --success-bg: #e7f7f4;
+  --success-text: #075f5a;
+  --tag-active-bg: #e7f7f4;
+  --tag-active-border: rgba(20, 121, 114, 0.32);
+  --tag-active-text: #075f5a;
+  --tab-active-bg: #eef2ff;
+  --topbar-bg: rgba(255, 255, 255, 0.86);
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--page-bg);
+  color-scheme: light;
+  font-synthesis: none;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='dark'] {
+  --page-bg: #0f1419;
+  --sidebar-bg: #131a22;
+  --surface: #18212b;
+  --surface-soft: #1c2631;
+  --surface-muted: #141c25;
+  --line: #2b3744;
+  --line-strong: #3a4857;
+  --text: #c4ceda;
+  --text-soft: #93a1b1;
+  --text-strong: #f3f7fb;
+  --accent: #28b9aa;
+  --accent-strong: #34c9ba;
+  --app-gradient-start: rgba(15, 20, 25, 0.96);
+  --app-gradient-end: rgba(15, 20, 25, 0.82);
+  --button-secondary-bg: #151d26;
+  --code-bg: #111922;
+  --code-text: #dce8f6;
+  --danger-bg: rgba(244, 63, 94, 0.14);
+  --danger-text: #fda4af;
+  --focus-ring: rgba(40, 185, 170, 0.3);
+  --input-bg: #101821;
+  --input-placeholder: #64748b;
+  --parse-error-bg: rgba(127, 29, 29, 0.34);
+  --parse-error-border: rgba(248, 113, 113, 0.42);
+  --parse-error-text: #fecaca;
+  --pre-bg: #080c12;
+  --pre-text: #d8e6ff;
+  --selected-bg: #17273a;
+  --selected-border: rgba(40, 185, 170, 0.4);
+  --shadow-soft: 0 10px 32px rgba(0, 0, 0, 0.24);
+  --shadow-fallback: 0 16px 40px rgba(0, 0, 0, 0.34);
+  --success-bg: rgba(20, 184, 166, 0.14);
+  --success-text: #5eead4;
+  --tag-active-bg: rgba(20, 184, 166, 0.14);
+  --tag-active-border: rgba(45, 212, 191, 0.36);
+  --tag-active-text: #7dd3fc;
+  --tab-active-bg: #223248;
+  --topbar-bg: rgba(18, 25, 33, 0.9);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--page-bg);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--page-bg);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text-strong);
+  background: var(--input-bg);
+}
+
+input,
+select {
+  min-height: 40px;
+  padding: 0 12px;
+}
+
+textarea {
+  padding: 12px;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.52;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+code {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--code-text);
+  background: var(--code-bg);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+::selection {
+  color: #fff;
+  background: #4258c7;
+}
+
+.app-fallback {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  padding: 24px;
+}
+
+.app-fallback div {
+  display: grid;
+  gap: 16px;
+  width: min(420px, 100%);
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow-fallback);
+}
+
+.app-fallback p {
+  margin: 0;
+  color: var(--text-strong);
+  font-weight: 750;
+}
+
+.app-fallback button {
+  min-height: 40px;
+  border: 1px solid #147972;
+  border-radius: 8px;
+  color: #fff;
+  background: #147972;
+  font-weight: 850;
+}
