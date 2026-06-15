@@ -40,16 +40,6 @@ export function EndpointSidebar({
         <p className="file-name">{fileName}</p>
       </div>
 
-      <label className="field-label" htmlFor="spec-text">
-        OpenAPI source
-      </label>
-      <textarea
-        id="spec-text"
-        className="spec-editor"
-        value={specText}
-        spellCheck="false"
-        onChange={(event) => onSpecTextChange(event.target.value)}
-      />
 
       {parseError && (
         <div className="parse-error" role="alert">

@@ -1,8 +1,9 @@
 {
-  "name": "vite-project",
+  "name": "api-client",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://yrs-rosh.github.io/APIClient/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

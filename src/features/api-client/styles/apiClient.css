@@ -225,8 +225,10 @@
 .endpoint-list {
   display: grid;
   gap: 8px;
-  min-height: 240px;
-  overflow: auto;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding-right: 2px;
 }
 
